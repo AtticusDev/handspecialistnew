@@ -77,5 +77,58 @@
 	}
 }
 
+nav {
+  font-size:0.8rem;
+  font-family:'Gill Sans W01 Light';
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.navfixed {
+    position: fixed;
+    top: 0;
+    z-index: 1030; 
+}
+.mainLogo img
+{
+  width: 363px;
+  max-width: 363px;
+}
 
+body
+{
+  font-family:'Avenir LT W01_35 Light1475496';
+  line-height: 1.8;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family:'Gill Sans W01 Light';
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
 
+@media only screen and (max-width: 800px) {
+  .mainLogo img{
+    width: 55vw;
+    max-width: 320px;
+
+  }
+  h1 {
+  font-size:1.5rem;
+  }
+  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+    clear: both;
+    width: 100%;
+  }
+  .image-wrapperB {
+    background-position: left;
+  }
+  .testimonial-body {
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #939598;
+  height:auto; 
+  }
+}

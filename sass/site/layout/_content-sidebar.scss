@@ -10,8 +10,10 @@
 	}
 	
 	@include media-breakpoint-up(md) {
-	   @include make-col(8);
+	   @include make-col(12);
 	}	
+	padding-left:0px;
+	padding-right:0px;
 }
 
 .widget-area {
