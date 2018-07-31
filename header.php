@@ -28,7 +28,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<div class="container-fluid navfixed" style="background-color: #<?php the_field('nav_color'); ?>">
+		<div class="container-fluid navfixed" style="background-color: rgba(<?php the_field('nav_color'); ?>, 0.7);">
 			<div class="row">
 				<div class="container">
 					<div class="row justify-content-center">
@@ -55,7 +55,7 @@
 				</div> <!-- close container -->
 			</div>
 		</div>
-		<div class="container-fluid" style="background-color: #<?php the_field('nav_color'); ?>">
+		<div class="container-fluid" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
 			<div class="row">
 		    	<div class="container mt-4">
 		    		<div class="row justify-content-center">

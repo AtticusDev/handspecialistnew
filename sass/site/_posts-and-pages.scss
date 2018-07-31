@@ -108,11 +108,28 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.appointmentBtn {
+  padding: 1rem 5rem;
+  border: 0;
+  border-radius: 0;
+  background-color: #939598;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  font-family:'Gill Sans W01 Light';
+  margin-top:2rem;
+}
+.appointmentBtn:hover {
+  background-color: #8a8c8e;
+  color: #ffffff;
+  
+}
+
 @media only screen and (max-width: 800px) {
   .mainLogo img{
     width: 55vw;
     max-width: 320px;
-
   }
   h1 {
   font-size:1.5rem;
@@ -125,10 +142,17 @@ h1 {
     background-position: left;
   }
   .testimonial-body {
-  font-size: 1.1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #939598;
-  height:auto; 
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #939598;
+    height:auto; 
+  }
+  .appointmentBtn {
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    margin-top:1rem;
   }
 }
+
