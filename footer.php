@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
 		<div class="container pt-5">
 			<div class="row justify-content-center">
 				<div class="col-md-3 text-center">

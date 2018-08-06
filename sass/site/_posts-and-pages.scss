@@ -122,8 +122,30 @@ h1 {
 }
 .appointmentBtn:hover {
   background-color: #8a8c8e;
-  color: #ffffff;
-  
+  color: #ffffff; 
+}
+
+.readmoreBtn {
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 0;
+  background-color: #e6e6e7;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+  font-family:'Gill Sans W01 Light';
+  margin-top:2rem;
+}
+.readmoreBtn:hover {
+  background-color: #dbdcdd;
+  color: #000000; 
+}
+.quoteText{
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-family:'Gill Sans W01 Light';
+  font-weight: 100; 
 }
 
 @media only screen and (max-width: 800px) {

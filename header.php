@@ -28,7 +28,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<div class="container-fluid navfixed" style="background-color: rgba(<?php the_field('nav_color'); ?>, 0.7);">
+		<div class="container-fluid navfixed" style="background-color: rgba(<?php the_field('nav_color'); ?>, 0.90);">
 			<div class="row">
 				<div class="container">
 					<div class="row justify-content-center">
