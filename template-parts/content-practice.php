@@ -26,13 +26,74 @@
 	</div>
 	<div class="container-fluid mb-0" style="background-color:#558858;">
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
+				<div class="col-sm-12 col-md-12 text-center text-white mt-5">
 				<?php
 					the_content();
 				?>
 				</div>
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-sm-12 col-md-4 bg-white practiceBox">
+							<h3>private practice</h3>
+							<p>Ramon’s private practice is based at Fortius Clinic – a collaboration of some of the UK’s leading musculoskeletal specialists at the forefront of orthopaedic surgery, sports medicine and radiology</p>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+						<div class="col-sm-12 col-md-4 bg-white practiceBox">
+							<h3>NHS practice</h3>
+							<p>His NHS practice is based at King’s College Hospital – one of London’s largest and busiest teaching hospitals and hub for complex orthopaedic surgery.</p>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+
+					</div>
+				</div>
 		</div>
 	</div>
+
+	<div class="container-fluid mb-0" style="background-color:#d0d1d3;">
+		<div class="row justify-content-md-center">
+				<div class="col-sm-12 col-md-12 text-center mt-5">
+					<h2>private practices</h2>
+				</div>
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-sm-12 col-md-3 bg-white practiceBox">
+							<h3>fortius clinic city</h3>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+						<div class="col-sm-12 col-md-3 bg-white practiceBox">
+							<h3>fortius clinic marylebone</h3>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+						<div class="col-sm-12 col-md-3 bg-white practiceBox">
+							<h3>lyca health, canary wharf</h3>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="container-fluid mb-0" style="background-color:#ffffff;">
+		<div class="row justify-content-md-center">
+				<div class="col-sm-12 col-md-12 text-center mt-5">
+					<h2>NHS practice</h2>
+				</div>
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-sm-12 col-md-3 bg-white practiceBox">
+							Flext item 1<br>
+							<a href="#" class="btn practiceBtn">View locations</a>
+						</div>
+
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+
+
 
 <!-- TESTIMONIAL BLOCK  -->
 

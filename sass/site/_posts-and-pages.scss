@@ -77,17 +77,9 @@
 	}
 }
 
-nav {
-  font-size:0.8rem;
-  font-family:'Gill Sans W01 Light';
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-}
-.navfixed {
-    position: fixed;
-    top: 0;
-    z-index: 1030; 
-}
+
+
+
 .mainLogo img
 {
   width: 363px;
@@ -99,7 +91,7 @@ body
   font-family:'Avenir LT W01_35 Light1475496';
   line-height: 1.8;
 }
-h1 {
+h1, h2 {
   font-size: 3rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
@@ -107,6 +99,17 @@ h1 {
   font-weight: 100;
   margin-bottom: 2rem;
 }
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family:'Gill Sans W01 Light';
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+
+/* BUTTONS */
 
 .appointmentBtn {
   padding: 1rem 5rem;
@@ -126,14 +129,14 @@ h1 {
 }
 
 .readmoreBtn {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0;
   background-color: #e6e6e7;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
   font-family:'Gill Sans W01 Light';
   margin-top:2rem;
 }
@@ -141,12 +144,91 @@ h1 {
   background-color: #dbdcdd;
   color: #000000; 
 }
+
+.practiceBtn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0;
+  background-color: #558858;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+  font-family:'Gill Sans W01 Light';
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.practiceBtn:hover {
+  background-color: #dbdcdd;
+  color: #ffffff; 
+}
+
+
+
+/* END BUTTONS */
+
+
 .quoteText{
   font-size: 1.3rem;
   line-height: 1.5;
   font-family:'Gill Sans W01 Light';
   font-weight: 100; 
 }
+
+
+.practiceBox {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+
+/* FORM STYLING */
+
+.gform_wrapper.two-column_wrapper ul.gform_fields {
+display: none;
+}
+.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+display: block;
+float: left;
+width: 50%;
+}
+.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+display: none;
+}
+.gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+  border: 0px;
+  background-color: #f5f5f3;
+}
+.gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border: 0px;
+  height: 11.4rem;
+  background-color: #f5f5f3; 
+}
+.gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  padding:1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+  background-color: #999999;
+  
+}
+div.gform_footer.top_label {
+ text-align: center;
+ font-size: 0.8rem;
+}
+
+/* END FORM STYLING */
+
+
+
 
 @media only screen and (max-width: 800px) {
   .mainLogo img{

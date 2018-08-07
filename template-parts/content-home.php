@@ -42,7 +42,7 @@
 					<div class="mainLogo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/hand-specialist-logo.png" class="pt-4 pb-4">
 					</div><p><?php the_field('doctor_bio'); ?></p>
-					<a href="#" class="btn readmoreBtn">Find out more</a>
+					<a href="#" class="btn readmoreBtn bg-light">Find out more</a>
 
 
 				</div>
@@ -58,7 +58,7 @@
 			<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
 				<h1><?php the_field('conditions_title'); ?></h1>
 				<p><?php the_field('conditions_text'); ?></p>
-				<a href="#" class="btn appointmentBtn">Book an appointment</a>
+				<a href="#" class="btn appointmentBtn">Request an appointment</a>
 			</div>
 		</div>
 	</div>

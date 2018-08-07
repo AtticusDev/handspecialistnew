@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in about.php
+ * Template part for displaying page content in patient.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -24,14 +24,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mb-0" style="background-color:#000000;">
+	<div class="container-fluid mb-0" style="background-color:#ffffff;">
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
+				<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
 				<?php
 					the_content();
 				?>
-				<a href="#" class="btn appointmentBtn">Request an appointment</a>
-
 				</div>
 		</div>
 	</div>

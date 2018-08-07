@@ -6951,17 +6951,6 @@ a.text-dark:hover, a.text-dark:focus {
       flex: 0 0 100%;
   max-width: 100%; }
 
-nav {
-  font-size: 0.8rem;
-  font-family: 'Gill Sans W01 Light';
-  letter-spacing: 0.1rem;
-  text-transform: uppercase; }
-
-.navfixed {
-  position: fixed;
-  top: 0;
-  z-index: 1030; }
-
 .mainLogo img {
   width: 363px;
   max-width: 363px; }
@@ -6970,7 +6959,7 @@ body {
   font-family: 'Avenir LT W01_35 Light1475496';
   line-height: 1.8; }
 
-h1 {
+h1, h2 {
   font-size: 3rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
@@ -6978,6 +6967,15 @@ h1 {
   font-weight: 100;
   margin-bottom: 2rem; }
 
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: 'Gill Sans W01 Light';
+  font-weight: 100;
+  margin-bottom: 1rem; }
+
+/* BUTTONS */
 .appointmentBtn {
   padding: 1rem 5rem;
   border: 0;
@@ -6995,14 +6993,14 @@ h1 {
   color: #ffffff; }
 
 .readmoreBtn {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0;
   background-color: #e6e6e7;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
   font-family: 'Gill Sans W01 Light';
   margin-top: 2rem; }
 
@@ -7010,12 +7008,75 @@ h1 {
   background-color: #dbdcdd;
   color: #000000; }
 
+.practiceBtn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0;
+  background-color: #558858;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+  font-family: 'Gill Sans W01 Light';
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.practiceBtn:hover {
+  background-color: #dbdcdd;
+  color: #ffffff; }
+
+/* END BUTTONS */
 .quoteText {
   font-size: 1.3rem;
   line-height: 1.5;
   font-family: 'Gill Sans W01 Light';
   font-weight: 100; }
 
+.practiceBox {
+  margin: 2rem;
+  padding: 2rem; }
+
+/* FORM STYLING */
+.gform_wrapper.two-column_wrapper ul.gform_fields {
+  display: none; }
+
+.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+  display: block;
+  float: left;
+  width: 50%; }
+
+.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+  display: none; }
+
+.gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+  border: 0px;
+  background-color: #f5f5f3; }
+
+.gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border: 0px;
+  height: 11.4rem;
+  background-color: #f5f5f3; }
+
+.gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase; }
+
+.gform_wrapper .gform_footer input[type=submit] {
+  padding: 1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+  background-color: #999999; }
+
+div.gform_footer.top_label {
+  text-align: center;
+  font-size: 0.8rem; }
+
+/* END FORM STYLING */
 @media only screen and (max-width: 800px) {
   .mainLogo img {
     width: 55vw;
@@ -7069,6 +7130,60 @@ h1 {
 --------------------------------------------------------------*/
 .site-header {
   margin-bottom: 0em; }
+
+/* NAVIGATION */
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; }
+
+nav {
+  font-size: 0.8rem;
+  font-family: 'Gill Sans W01 Light';
+  letter-spacing: 0.1rem;
+  text-transform: uppercase; }
+
+.navfixed {
+  position: fixed;
+  top: 0;
+  z-index: 1030; }
+
+.navbar-nav li {
+  display: inline-block;
+  vertical-align: top; }
+
+li a:hover,
+li a:focus {
+  outline: none; }
+
+.navbar-nav a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  outline: none;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  border-bottom: 1px solid #ffffff;
+  height: 32px;
+  pointer-events: none; }
+
+.navbar-nav a::after {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  content: '';
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.2s, transform 0.3s; }
+
+.navbar-nav a:hover::after,
+.navbar-nav a:focus::after {
+  opacity: 1;
+  transform: scaleX(1); }
 
 @font-face {
   font-family: "Avenir LT W01_35 Light1475496";
