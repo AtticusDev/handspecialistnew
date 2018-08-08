@@ -24,12 +24,63 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
+		<div class="row justify-content-md-center">
+				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
+				<h1><?php
+					the_title();
+				?>
+				</h1>
+				</div>
+		</div>
+	</div>
+
+
+
+
+
 	<div class="container-fluid mb-0" style="background-color:#ffffff;">
 		<div class="row justify-content-md-center">
 				<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-				<?php
-					the_content();
-				?>
+
+					<section class="accordian">
+
+		<?php
+
+		$number = 0;
+
+		 if( have_rows('pi_accordian') ): 
+			 while( have_rows('pi_accordian') ): the_row(); 
+			// vars
+			$title = get_sub_field('title');
+			$description = get_sub_field('description');
+
+		?>
+
+				  <div>
+				  	<?php if($number==0) {?>
+				    <input id="item-<?php echo $number+1; ?>" name="accordian-item" type="radio" checked="">
+				<?php } else {?>
+				    <input id="item-<?php echo $number+1; ?>" name="accordian-item" type="radio">
+				<?php } ?> 
+
+				    <label for="item-<?php echo $number+1; ?>"><?php echo $title; ?></label>
+				    <article class="item-medium">
+				      <p><?php echo $description; ?></p>
+				    </article>
+				  </div>
+				  <?php $number = $number+1; ?>
+
+		<?php endwhile;
+		endif; ?>
+
+
+
+					</section>
+
+
+
 				</div>
 		</div>
 	</div>

@@ -7040,6 +7040,56 @@ h3 {
   padding: 3rem;
   margin-bottom: 2rem; }
 
+/* ACCORDIAN STYLING */
+.accordian {
+  width: 100%;
+  margin: 40px auto 30px auto;
+  text-align: left; }
+
+.accordian label {
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #e1e1e1;
+  color: #222;
+  line-height: 63px;
+  font-size: 18px; }
+
+.accordian label:hover {
+  color: #999999; }
+
+.accordian input:checked + label, .accordian input:checked + label:hover {
+  color: #999999; }
+
+.accordian input {
+  display: none; }
+
+.accordian article {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out; }
+
+.accordian article p {
+  padding: 0px 20px 0px 20px;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.9; }
+
+.accordian input:checked ~ article {
+  transition: height 0.5s ease-in-out; }
+
+.accordian input:checked ~ article.item-medium {
+  height: 200px; }
+
+/* END ACCORDIAN STYLING */
 /* FORM STYLING */
 .gform_wrapper.two-column_wrapper ul.gform_fields {
   display: none; }
