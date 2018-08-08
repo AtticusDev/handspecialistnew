@@ -7033,8 +7033,12 @@ h3 {
   font-weight: 100; }
 
 .practiceBox {
-  margin: 2rem;
-  padding: 2rem; }
+  margin: 2rem; }
+
+.NHSpracticeBox {
+  background-color: #d0d1d3;
+  padding: 3rem;
+  margin-bottom: 2rem; }
 
 /* FORM STYLING */
 .gform_wrapper.two-column_wrapper ul.gform_fields {

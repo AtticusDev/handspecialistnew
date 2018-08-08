@@ -33,15 +33,13 @@
 				</div>
 				<div class="container">
 					<div class="row justify-content-md-center">
-						<div class="col-sm-12 col-md-4 bg-white practiceBox">
-							<h3>private practice</h3>
-							<p>Ramon’s private practice is based at Fortius Clinic – a collaboration of some of the UK’s leading musculoskeletal specialists at the forefront of orthopaedic surgery, sports medicine and radiology</p>
-							<a href="#" class="btn practiceBtn">View locations</a>
+						<div class="col-sm-12 col-md-4 bg-white p-4 practiceBox">
+							<?php the_field('private_practice'); ?>
+							<a href="#private" class="btn practiceBtn">View locations</a>
 						</div>
-						<div class="col-sm-12 col-md-4 bg-white practiceBox">
-							<h3>NHS practice</h3>
-							<p>His NHS practice is based at King’s College Hospital – one of London’s largest and busiest teaching hospitals and hub for complex orthopaedic surgery.</p>
-							<a href="#" class="btn practiceBtn">View locations</a>
+						<div class="col-sm-12 col-md-4 bg-white p-4 practiceBox">
+							<?php the_field('nhs_practice'); ?>
+							<a href="#nhs" class="btn practiceBtn">View locations</a>
 						</div>
 
 					</div>
@@ -50,40 +48,69 @@
 	</div>
 
 	<div class="container-fluid mb-0" style="background-color:#d0d1d3;">
+		<a id="private"></a>
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-12 text-center mt-5">
-					<h2>private practices</h2>
+				<div class="col-sm-12 col-md-6 text-center mt-5">
+					<h2>private practice</h2>
+					<p><?php the_field('private_practice'); ?></p>
 				</div>
 				<div class="container">
 					<div class="row justify-content-md-center">
-						<div class="col-sm-12 col-md-3 bg-white practiceBox">
-							<h3>fortius clinic city</h3>
-							<a href="#" class="btn practiceBtn">View locations</a>
+
+				<?php 
+				$args = array( 'post_type' => 'locations' );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+				 $locationimg = get_field( "location_image" );
+				 $locationdetails = get_field( "location_details" );
+				 $googlelink = get_field( "google_link" );
+				?>
+					<div class="col-sm-12 col-md-4 practiceBox">
+						<div class="bg-white p-4">
+							<h3><?php the_title(); ?></h3>
+							<img src="<?php echo $locationimg; ?>">
 						</div>
-						<div class="col-sm-12 col-md-3 bg-white practiceBox">
-							<h3>fortius clinic marylebone</h3>
-							<a href="#" class="btn practiceBtn">View locations</a>
-						</div>
-						<div class="col-sm-12 col-md-3 bg-white practiceBox">
-							<h3>lyca health, canary wharf</h3>
-							<a href="#" class="btn practiceBtn">View locations</a>
-						</div>
+						<p><?php the_content(); ?></p>
+						<p><?php echo $locationdetails; ?></p>
+						<a href="<?php echo $googlelink; ?>" target="_blank" class="btn practiceBtn">Google map</a>
+
+					</div>
+
+				<?php 
+				endwhile;
+				wp_reset_query();
+				?>
 
 					</div>
 				</div>
+				<div class="col-sm-12 col-md-12 text-center mt-2 mb-5">
+					<p><?php the_field('private_practice_contact'); ?></p>
+				<a href="#" class="btn appointmentBtn">Request an appointment</a>
+				</div>
+
+
 		</div>
 	</div>
 
 	<div class="container-fluid mb-0" style="background-color:#ffffff;">
+		<a id="nhs"></a>
 		<div class="row justify-content-md-center">
 				<div class="col-sm-12 col-md-12 text-center mt-5">
 					<h2>NHS practice</h2>
 				</div>
 				<div class="container">
 					<div class="row justify-content-md-center">
-						<div class="col-sm-12 col-md-3 bg-white practiceBox">
-							Flext item 1<br>
-							<a href="#" class="btn practiceBtn">View locations</a>
+						<div class="col-sm-12 col-md-10 NHSpracticeBox">
+							<h3><?php the_field('nhs_practice_title'); ?></h3>
+							<div class="row">
+								<div class="col-sm-12 col-md-6 mt-2">
+									<?php the_field('nhs_practice_details'); ?>
+								</div>
+								<div class="col-sm-12 col-md-6 mt-2">
+									<img src="<?php the_field('nhs_practice_image'); ?>">
+								</div>
+							</div>
+
 						</div>
 
 					</div>

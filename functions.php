@@ -121,6 +121,8 @@ require get_template_directory() . '/inc/bootstrap-walker.php';
 require get_template_directory() . '/inc/post-types/CPT.php';
 //Quote custom post type
 require get_template_directory() . '/inc/post-types/register-quotes.php';
+//Location custom post type
+require get_template_directory() . '/inc/post-types/register-locations.php';
 
 
 
