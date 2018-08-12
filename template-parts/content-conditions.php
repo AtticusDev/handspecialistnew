@@ -24,13 +24,30 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mb-0" style="background-color:#b2599d;">
-		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
-				<?php
-					the_content();
-				?>
+	<div class="container-fluid mb-0">
+		<div class="row">
+			<div class="container">
+				<div class="row justify-content-md-center">
+				
+
+					<?php
+					$args = array( 'post_type' => 'treatment', 'posts_per_page' => 20 );
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+						echo '<div class="col-sm-12 col-md-6 text-center mt-2 mb-2">
+						<div>';
+
+							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="d-flex align-items-center btn treatmentBtn">', '</a>' );
+
+						echo '</div>
+						</div>';
+					endwhile;
+
+					wp_reset_query();
+
+					?>
 				</div>
+			</div>
 		</div>
 	</div>
 
