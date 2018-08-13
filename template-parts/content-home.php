@@ -28,6 +28,7 @@
 						<?php
 							the_content();
 						?>
+						<a href="#" class="btn appointmentBtn">View conditions treated</a>
 						</div>
 				</div>
 			</div>
@@ -38,10 +39,11 @@
 			<div class="container">
 				<div class="row align-items-end">
 				<div class="col-sm-12 col-md-6 text-center p-4 mt-3 mb-3">
-					<h1><?php the_field('doctor_name'); ?></h1>
 					<div class="mainLogo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/hand-specialist-logo.png" class="pt-4 pb-4">
-					</div><p><?php the_field('doctor_bio'); ?></p>
+					</div>
+					<h1><?php the_field('doctor_name'); ?></h1>
+					<p><?php the_field('doctor_bio'); ?></p>
 					<a href="#" class="btn readmoreBtn bg-light">Find out more</a>
 
 
@@ -53,11 +55,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mb-0" style="background-color:#d1d2d4;">
+	<div class="container-fluid mb-0" style="background-color:#418de3;">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-				<h1><?php the_field('conditions_title'); ?></h1>
-				<p><?php the_field('conditions_text'); ?></p>
 				<a href="#" class="btn appointmentBtn">Request an appointment</a>
 			</div>
 		</div>

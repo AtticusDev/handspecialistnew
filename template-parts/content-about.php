@@ -24,13 +24,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mb-0" style="background-color:#000000;">
+	<div class="container-fluid mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
-				<?php
-					the_content();
-				?>
-				<a href="#" class="btn appointmentBtn">Request an appointment</a>
+				<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
+				<h1 style="margin-bottom: 0px;"><?php the_field('name'); ?></h1>
+				<h4><?php the_field('title'); ?><br />
+				<?php the_field('qualifications'); ?></h4>
+				<div class="mt-5">
+
+					<?php
+						the_content();
+					?>
+					<a href="#" class="btn appointmentBtn">Download full pdf profile</a>
+				</div>
 
 				</div>
 		</div>

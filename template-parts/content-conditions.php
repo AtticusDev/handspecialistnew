@@ -24,6 +24,19 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
+		<div class="row justify-content-md-center">
+				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
+				<h1><?php
+					the_title();
+				?>
+				</h1>
+				</div>
+		</div>
+	</div>
+
+
 	<div class="container-fluid mb-0">
 		<div class="row">
 			<div class="container">
@@ -34,13 +47,11 @@
 					$args = array( 'post_type' => 'treatment', 'posts_per_page' => 20 );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
-						echo '<div class="col-sm-12 col-md-6 text-center mt-2 mb-2">
-						<div>';
+						echo '<div class="col-sm-12 col-md-6 text-center mt-2 mb-2">';
 
-							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="d-flex align-items-center btn treatmentBtn">', '</a>' );
+							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="btn treatmentBtn">', '</a>' );
 
-						echo '</div>
-						</div>';
+						echo '</div>';
 					endwhile;
 
 					wp_reset_query();
@@ -51,10 +62,10 @@
 		</div>
 	</div>
 
-	<div class="container-fluid mb-0">
+	<div class="container-fluid mt-5 mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">
-			<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-				<a href="#" class="btn appointmentBtn">Book an appointment</a>
+			<div class="col-sm-12 col-md-6 text-center mt-3 mb-5">
+				<a href="#" class="btn appointmentBtn">Request an appointment</a>
 			</div>
 		</div>
 	</div>

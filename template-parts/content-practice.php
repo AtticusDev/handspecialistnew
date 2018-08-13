@@ -47,7 +47,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid mb-0" style="background-color:#d0d1d3;">
+	<div class="container-fluid mb-0">
 		<a id="private"></a>
 		<div class="row justify-content-md-center">
 				<div class="col-sm-12 col-md-6 text-center mt-5">
@@ -57,42 +57,39 @@
 				<div class="container">
 					<div class="row justify-content-md-center">
 
-				<?php 
-				$args = array( 'post_type' => 'locations' );
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post();
-				 $locationimg = get_field( "location_image" );
-				 $locationdetails = get_field( "location_details" );
-				 $googlelink = get_field( "google_link" );
-				?>
-					<div class="col-sm-12 col-md-4 practiceBox">
-						<div class="bg-white p-4">
-							<h3><?php the_title(); ?></h3>
-							<img src="<?php echo $locationimg; ?>">
-						</div>
-						<p><?php the_content(); ?></p>
-						<p><?php echo $locationdetails; ?></p>
-						<a href="<?php echo $googlelink; ?>" target="_blank" class="btn practiceBtn">Google map</a>
+						<?php 
+						$args = array( 'post_type' => 'locations' );
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+						 $locationimg = get_field( "location_image" );
+						 $locationdetails = get_field( "location_details" );
+						 $googlelink = get_field( "google_link" );
+						?>
+							<div class="col-sm-12 col-md-4 practiceBox">
+								<div class="p-4">
+									<h3><?php the_title(); ?></h3>
+									<img src="<?php echo $locationimg; ?>">
+									<p><?php the_content(); ?></p>
+									<p><?php echo $locationdetails; ?></p>
+									<a href="<?php echo $googlelink; ?>" target="_blank" class="btn practiceBtn">Google map</a>
+								</div>
 
-					</div>
+							</div>
 
-				<?php 
-				endwhile;
-				wp_reset_query();
-				?>
-
+						<?php 
+						endwhile;
+						wp_reset_query();
+						?>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-12 text-center mt-2 mb-5">
 					<p><?php the_field('private_practice_contact'); ?></p>
-				<a href="#" class="btn appointmentBtn">Request an appointment</a>
+				<a href="#" class="btn appointmentBtnGreen">Request an appointment</a>
 				</div>
-
-
 		</div>
 	</div>
 
-	<div class="container-fluid mb-0" style="background-color:#ffffff;">
+	<div class="container-fluid mb-0" style="background-color:#d0d1d3;">
 		<a id="nhs"></a>
 		<div class="row justify-content-md-center">
 				<div class="col-sm-12 col-md-12 text-center mt-5">

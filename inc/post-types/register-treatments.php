@@ -7,6 +7,6 @@ $treatment = new CPT(array(
 	'slug' => 'treatment'
 ),
 	array(
-    'supports' => array('title', 'editor', 'custom-fields'),
+    'supports' => array('title', 'editor', 'custom-fields', 'thumbnail'),
     'menu_icon' => 'dashicons-carrot'
 ));
