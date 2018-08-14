@@ -33,13 +33,13 @@
 				</div>
 				<div class="container">
 					<div class="row justify-content-md-center">
-						<div class="col-sm-12 col-md-4 bg-white p-4 practiceBox">
+						<div class="d-flex flex-column col-sm-12 col-md-4 bg-white p-4 practiceBox">
 							<?php the_field('private_practice'); ?>
-							<a href="#private" class="btn practiceBtn">View locations</a>
+							<a href="#private" class="btn practiceBtn mt-auto">View locations</a>
 						</div>
-						<div class="col-sm-12 col-md-4 bg-white p-4 practiceBox">
+						<div class="d-flex flex-column col-sm-12 col-md-4 bg-white p-4 practiceBox">
 							<?php the_field('nhs_practice'); ?>
-							<a href="#nhs" class="btn practiceBtn">View locations</a>
+							<a href="#nhs" class="btn practiceBtn mt-auto">View locations</a>
 						</div>
 
 					</div>
@@ -65,14 +65,12 @@
 						 $locationdetails = get_field( "location_details" );
 						 $googlelink = get_field( "google_link" );
 						?>
-							<div class="col-sm-12 col-md-4 practiceBox">
-								<div class="p-4">
+							<div class="d-flex flex-column col-sm-12 col-md-4 p-4 practiceBox">
 									<h3><?php the_title(); ?></h3>
 									<img src="<?php echo $locationimg; ?>">
 									<p><?php the_content(); ?></p>
 									<p><?php echo $locationdetails; ?></p>
-									<a href="<?php echo $googlelink; ?>" target="_blank" class="btn practiceBtn">Google map</a>
-								</div>
+									<a href="<?php echo $googlelink; ?>" target="_blank" class="btn practiceBtn mt-auto">Google map</a>
 
 							</div>
 
@@ -83,7 +81,7 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-12 text-center mt-2 mb-5">
-					<p><?php the_field('private_practice_contact'); ?></p>
+					<p class="contactBlock"><?php the_field('private_practice_contact'); ?></p>
 				<a href="#" class="btn appointmentBtnGreen">Request an appointment</a>
 				</div>
 		</div>

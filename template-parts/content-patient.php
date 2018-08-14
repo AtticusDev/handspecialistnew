@@ -36,54 +36,141 @@
 		</div>
 	</div>
 
+<!-- PATIENT NAVIGATION LOOP  -->
 
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-sm-12 col-md-8">
+					<?php
+					// check if the repeater field has rows of data
+					if( have_rows('pi_accordian') ):
 
+						// set the counter variable	
+						$i = 0;
 
+					 	// loop through the rows of data to create the navigation
+					    while ( have_rows('pi_accordian') ) : the_row();
+				    	$i++;
+					    	?>
+					    	<h4 class="underlineLink"><a href="#<?php echo $i; ?>">
+							<?php
+							// display a sub field value
+					        the_sub_field('title');
+					        ?>
+					    	</h4></a>
+					        <?php
 
-	<div class="container-fluid mb-0" style="background-color:#ffffff;">
-		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-
-					<section class="accordian">
-
-		<?php
-
-		$number = 0;
-
-		 if( have_rows('pi_accordian') ): 
-			 while( have_rows('pi_accordian') ): the_row(); 
-			// vars
-			$title = get_sub_field('title');
-			$description = get_sub_field('description');
-
-		?>
-
-				  <div>
-				  	<?php if($number==0) {?>
-				    <input id="item-<?php echo $number+1; ?>" name="accordian-item" type="radio" checked="">
-				<?php } else {?>
-				    <input id="item-<?php echo $number+1; ?>" name="accordian-item" type="radio">
-				<?php } ?> 
-
-				    <label for="item-<?php echo $number+1; ?>"><?php echo $title; ?></label>
-				    <article class="item-medium">
-				      <p><?php echo $description; ?></p>
-				    </article>
-				  </div>
-				  <?php $number = $number+1; ?>
-
-		<?php endwhile;
-		endif; ?>
-
-
-
-					</section>
-
-
-
+					    endwhile;
+					endif;
+					?>
+					</div>
 				</div>
+			</div>
 		</div>
 	</div>
+
+<!-- END PATIENT NAVIGATION LOOP  -->
+
+
+<!-- PATIENT INFORMATION CONTENT AREA -->
+
+	<div class="container-fluid">
+						<?php
+					// check if the repeater field has rows of data
+					if( have_rows('pi_accordian') ):
+
+						// set the counter variable	
+						$i = 0;
+					 	// loop through the rows of data
+					    while ( have_rows('pi_accordian') ) : the_row();
+					    $i++;
+					    	?>
+			<div class="container-fluid mb-0  treatmentPanel">
+				<a id="<?php echo $i; ?>"></a>
+				<div class="row">
+					<div class="container">
+						<div class="row  justify-content-md-center text-left">
+							<div class="col-md-8 pt-5 pb-5">
+							    	<h4>
+									<?php
+									// display a sub field value
+							        the_sub_field('title');
+							        ?>
+							    	</h4>
+							    	<p>
+									<?php
+									// display a sub field value
+							        the_sub_field('description');
+							        ?>
+							        </p>
+							</div>
+						</div> <!-- end row -->
+					</div> <!-- end container -->
+				</div><!-- end row -->
+			</div> <!-- end container -->
+
+					        <?php
+				    endwhile;
+					else :
+					    // no rows found
+					endif;
+					?>
+	</div>
+
+
+<!-- END PATIENT INFORMATION CONTENT AREA -->
+
+
+<!-- PROFESSIONAL PARTNERS SECTION -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container mb-3">
+									<h2>Professional Partners</h2>
+
+				<div class="row justify-content-center text-center">
+
+				<?php
+				// check if the repeater field has rows of data
+				if( have_rows('professional_partners') ):
+
+				 	// loop through the rows of data
+				    while ( have_rows('professional_partners') ) : the_row();
+			    	?>
+					<div class="col-sm-12 col-md-3 pt-5 pb-3 ppPanel">
+				    	<h4>
+						<?php
+						// display a sub field value
+				        the_sub_field('title');
+				        ?>
+				    	</h4>
+				    	<p>
+						<?php
+						// display a sub field value
+				        the_sub_field('address');
+				        ?>
+				        </p>
+				        <p><a href="<?php the_sub_field('website'); ?>" target="_blank">Visit website</a>
+					</div>
+
+		        <?php
+			    endwhile;
+				else :
+				    // no rows found
+				endif;
+				?>
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</div><!-- end row -->
+	</div> <!-- end container -->
+
+
+
+<!-- END PROFESSIONAL PARTNERS SECTION -->
+
+
 
 
 

@@ -56,7 +56,8 @@
 					        <?php
 
 					    endwhile;
-					    ?>
+					endif;
+					?>
 					</div>
 				</div>
 			</div>
@@ -66,6 +67,9 @@
 
 	<div class="container-fluid">				
 						<?php
+					// check if the repeater field has rows of data
+					if( have_rows('treatments') ):
+
 						// set the counter variable	
 						$i = 0;
 					 	// loop through the rows of data

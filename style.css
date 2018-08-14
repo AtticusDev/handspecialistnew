@@ -7100,6 +7100,14 @@ h4 a:hover {
   padding-bottom: 1rem;
   border-bottom: 1px solid #999999; }
 
+.ppPanel {
+  margin: 1rem;
+  background-color: #d0d1d3; }
+
+.contactBlock {
+  font-size: 1.2rem;
+  padding: 0rem 4rem; }
+
 /* ACCORDIAN STYLING */
 .accordian {
   width: 100%;
@@ -7196,6 +7204,13 @@ div.gform_footer.top_label {
   background-color: #e6e7e8; }
 
 /* END TREATMENT PANELS */
+@media (min-width: 768px) {
+  .gform_multi_column_wrapper ul.gform_fields.half_width {
+    width: 50%; }
+  .gform_multi_column_wrapper ul.gform_fields.full_width {
+    width: 100%;
+    clear: both; } }
+
 @media only screen and (max-width: 800px) {
   .mainLogo img {
     width: 55vw;
