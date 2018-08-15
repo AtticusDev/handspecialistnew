@@ -24,7 +24,7 @@
 	</div>
 
 
-	<div class="container-fluid mb-0">
+	<div class="container-fluid pb-4 bg-white">
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">
@@ -34,7 +34,7 @@
 					$args = array( 'post_type' => 'treatment', 'posts_per_page' => 20 );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
-						echo '<div class="col-sm-12 col-md-6 text-center mt-2 mb-2">';
+						echo '<div class="col-sm-12 col-md-6 text-center mt-2 pb-2">';
 
 							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="btn treatmentBtn">', '</a>' );
 
@@ -49,7 +49,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid mt-5 mb-0" style="background-color:#d1d3d4;">
+	<div class="container-fluid pt-4 mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-6 text-center mt-3 mb-5">
 				<a href="#" class="btn appointmentBtn black-white">Request an appointment</a>

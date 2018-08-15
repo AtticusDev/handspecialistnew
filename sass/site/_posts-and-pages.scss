@@ -420,12 +420,56 @@ div.gform_footer.top_label {
 
 /* TREATMENT PANELS */
 
+.treatmentPanel{
+  background-color: #ffffff;
+}
 .treatmentPanel:nth-child(odd){
   background-color: #e6e7e8;  
 }
 
 
 /* END TREATMENT PANELS */
+
+
+/* PARALLAX */
+
+.bg {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 750px;
+  top: 0;
+  left: 0;
+/*  background-size: cover;*/
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  z-index: -1;
+}
+
+/* header */
+header {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+/*  background: rgba(0, 0, 0, 1);*/
+}
+header .content {
+  position: relative;
+  display: block;
+  color: #FFFFFF;
+  top: 15%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* END PARALLAX */
+
 
 
 @media (min-width: 768px) {
@@ -468,5 +512,23 @@ div.gform_footer.top_label {
     margin-top:1rem;
     margin-bottom:1rem;
   }
+  .bg {
+    width: 100vw;
+    height: 330px;
+    top: 0;
+    left: 0;
+    background-size: 80%;
+  }
+  /* header */
+header {
+  height: 320px;
+}
+
+header .content {
+    top: 22%;
+  }
+
+
+
 }
 

@@ -24,4 +24,20 @@ jQuery(document).ready(function($){
   });
 
 
+  //Parallax scroll
+  $(window).scroll(function() {
+    if ($( window ).width() >= 1024) {
+    	 parallax();
+      }
+  });
+
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+  	      $('.bg').css('top',-(scrolled*0.2)+'px');
+  	      $('header .content').css('top',15+(scrolled*0.1)+'%');
+    		  $('header .content').css('opacity',1-(scrolled*0.01)/10);
+          $('header .content').css('opacity',1-(scrolled*0.01)/10);
+
+  	}
+
 });

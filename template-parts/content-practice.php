@@ -34,10 +34,10 @@
 		</div>
 	</div>
 
-	<div class="container-fluid mb-0">
+	<div class="container-fluid mb-0 bg-white">
 		<a id="private"></a>
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 text-center mt-5">
+				<div class="col-sm-12 col-md-6 text-center pt-5">
 					<h2>private practice</h2>
 					<p><?php the_field('private_practice'); ?></p>
 				</div>

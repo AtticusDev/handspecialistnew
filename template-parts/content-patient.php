@@ -25,7 +25,7 @@
 
 <!-- PATIENT NAVIGATION LOOP  -->
 
-	<div class="container-fluid mt-5">
+	<div class="container-fluid pt-5 pb-5 bg-white">
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">
@@ -112,7 +112,7 @@
 
 <!-- PROFESSIONAL PARTNERS SECTION -->
 
-	<div class="container-fluid">
+	<div class="container-fluid bg-white">
 		<div class="row">
 			<div class="container mb-3">
 									<h2>Professional Partners</h2>
