@@ -70,6 +70,19 @@ li a:focus {
 }
 
 
+@media only screen and (max-width: 800px) {
+
+    nav {
+      font-size:1rem;
+      font-family:'Gill Sans W01 Medium';
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+
+}
+
+
+
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=224ce532-c29e-44f6-aeb7-41c3728c27d0");
     @font-face{

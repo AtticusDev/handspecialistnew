@@ -6957,7 +6957,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Avenir LT W01_35 Light1475496';
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-size: 0.9rem; }
 
 h1, h2 {
   font-size: 3rem;
@@ -6965,7 +6966,8 @@ h1, h2 {
   text-transform: uppercase;
   font-family: 'Gill Sans W01 Light';
   font-weight: 100;
-  margin-bottom: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
 
 h3 {
   font-size: 1.5rem;
@@ -6996,34 +6998,73 @@ h4 a:hover {
   padding: 1rem 5rem;
   border: 0;
   border-radius: 0;
-  background-color: #ffffff;
-  color: #3f6cc1;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.5rem;
   font-family: 'Gill Sans W01 Light';
-  margin-top: 2rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+  cursor: pointer; }
+
+.appointmentBtn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.appointmentBtn:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: 5px;
+  transition: 0.5s; }
 
 .appointmentBtn:hover {
-  background-color: #d1d1d1;
-  color: #3f6cc1; }
+  padding-right: 8rem;
+  padding-left: 2rem; }
 
-.appointmentBtnGreen {
+.appointmentBtn:hover:after {
+  opacity: 1;
+  right: 20px; }
+
+.blue-white {
+  background-color: #ffffff;
+  color: #3f6cc1; }
+  .blue-white:hover {
+    background-color: #d2d2d2; }
+
+.black-white {
+  background-color: #ffffff;
+  color: #000000; }
+  .black-white:hover {
+    background-color: #f2f2f2;
+    color: #000000; }
+
+.white-green {
+  background-color: #558858;
+  color: #ffffff; }
+  .white-green:hover {
+    background-color: #426a44;
+    color: #ffffff; }
+
+.quoteBtn {
   white-space: normal;
-  padding: 1rem 5rem;
+  padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0;
-  background-color: #558858;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
   font-family: 'Gill Sans W01 Light';
   margin-top: 2rem; }
 
-.appointmentBtnGreen:hover {
-  background-color: #4f7e52;
-  color: #ffffff; }
+.quoteBtn:hover {
+  background-color: #d2d2d2;
+  color: #000000; }
 
 .readmoreBtn {
   white-space: normal;
@@ -7085,7 +7126,9 @@ h4 a:hover {
   font-size: 1.3rem;
   line-height: 1.5;
   font-family: 'Gill Sans W01 Light';
-  font-weight: 100; }
+  font-weight: 100;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .practiceBox {
   margin: 2rem;
@@ -7232,7 +7275,8 @@ div.gform_footer.top_label {
     padding: 0.5rem 2rem;
     letter-spacing: 0.3rem;
     font-size: 1rem;
-    margin-top: 1rem; } }
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -7318,6 +7362,13 @@ li a:focus {
 .navbar-nav a:focus::after {
   opacity: 1;
   transform: scaleX(1); }
+
+@media only screen and (max-width: 800px) {
+  nav {
+    font-size: 1rem;
+    font-family: 'Gill Sans W01 Medium';
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; } }
 
 @font-face {
   font-family: "Avenir LT W01_35 Light1475496";

@@ -20,7 +20,7 @@
 				</div>
 				<div class="col-md-6 text-center text-white">
 					<div class="mainLogo">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/hand-specialist-logo.png" class=" pb-4">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class=" pb-4">
 					</div>
 					FORTIUS CLINIC CENTRAL<BR>
 					17 FITZHARDINGE STREET<BR />

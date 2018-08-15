@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="container">
 					<div class="row justify-content-center">
-					    <nav class="navbar navbar-expand-lg navbar-dark" >
+					    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center" >
 								<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 								</button>
@@ -60,12 +60,29 @@
 		    	<div class="container mt-4">
 		    		<div class="row justify-content-center">
 				          <div class="mainLogo justify-content-md-center">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/hand-specialist-logo.png" class="mt-5">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-5">
 						</div>					
 			        </div>
 			    </div>
 			</div>
 		</div>
+
+		<div class="container-fluid mb-0 text-center">
+			<div class="row">
+				<div class="container-fluid homebanner" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
+					<div class="row align-items-end">
+						<div class="col-md-12">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<img src="<?php the_post_thumbnail_url(); ?>" class="align-bottom">
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
