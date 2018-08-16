@@ -11,20 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('text-center'); ?>>
 
-	<div class="container-fluid mb-0 text-center">
-		<div class="row">
-			<div class="container-fluid homebanner" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
-				<div class="row align-items-end">
-					<div class="col-md-12">
-
-						<?php if ( has_post_thumbnail() ) : ?>
-							<img src="<?php the_post_thumbnail_url(); ?>" class="align-bottom">
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
 		<div class="row justify-content-md-center">
@@ -38,7 +24,7 @@
 	</div>
 
 
-	<div class="container-fluid mb-0">
+	<div class="container-fluid mb-0 bg-white">
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">

@@ -115,9 +115,9 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/bootstrap-walker.php';
 
 /**
- * Plugin Activation
+ * Plugin Activations
  */
-require get_template_directory() . '/plugin-activation/install-plugins.php';
+/*require get_template_directory() . '/plugin-activation/install-plugins.php';*/
 
 
 /**
