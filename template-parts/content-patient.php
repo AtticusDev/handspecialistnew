@@ -63,7 +63,6 @@
 
 <!-- PATIENT INFORMATION CONTENT AREA -->
 
-	<div class="container-fluid">
 						<?php
 					// check if the repeater field has rows of data
 					if( have_rows('pi_accordian') ):
@@ -104,7 +103,6 @@
 					    // no rows found
 					endif;
 					?>
-	</div>
 
 
 <!-- END PATIENT INFORMATION CONTENT AREA -->

@@ -52,7 +52,7 @@
 	<div class="container-fluid pt-4 mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-6 text-center mt-3 mb-5">
-				<a href="#" class="btn appointmentBtn black-white">Request an appointment</a>
+				<a href="#" class="btn appointmentBtn white-grey">Request an appointment</a>
 			</div>
 		</div>
 	</div>

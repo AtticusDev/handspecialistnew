@@ -19,7 +19,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background-color: rgba(<?php the_field('nav_color'); ?>, 1);">
 <div id="page" class="site">
 
 		<?php
@@ -65,7 +65,7 @@
 		    	<div class="container mt-4">
 		    		<div class="row justify-content-center">
 				          <div class="mainLogo">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-0">
+							<a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-0"></a>
 						</div>					
 			        </div>
 			    </div>

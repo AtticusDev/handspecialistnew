@@ -7042,11 +7042,25 @@ h4 a:hover {
     background-color: #f2f2f2;
     color: #000000; }
 
+.white-black {
+  background-color: #000000;
+  color: #ffffff; }
+  .white-black:hover {
+    background-color: #303030;
+    color: #ffffff; }
+
 .white-green {
   background-color: #558858;
   color: #ffffff; }
   .white-green:hover {
     background-color: #426a44;
+    color: #ffffff; }
+
+.white-grey {
+  background-color: #929496;
+  color: #ffffff; }
+  .white-grey:hover {
+    background-color: #747577;
     color: #ffffff; }
 
 .quoteBtn {
@@ -7121,6 +7135,26 @@ h4 a:hover {
   background-color: #dbdcdd;
   color: #000000; }
 
+.treatmentBtnLt {
+  white-space: normal;
+  padding: 1.5rem 2rem;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  min-height: 90px;
+  max-height: 90px;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  font-family: 'Gill Sans W01 Light';
+  margin-top: 2rem; }
+
+.treatmentBtnLt:hover {
+  background-color: #e9e9e9;
+  color: #000000; }
+
 /* END BUTTONS */
 .quoteText {
   font-size: 1.3rem;
@@ -7148,8 +7182,7 @@ h4 a:hover {
   background-color: #d0d1d3; }
 
 .contactBlock {
-  font-size: 1.2rem;
-  padding: 0rem 4rem; }
+  font-size: 1.5rem; }
 
 /* ACCORDIAN STYLING */
 .accordian {
@@ -7255,7 +7288,7 @@ div.gform_footer.top_label {
   display: block;
   position: fixed;
   width: 100vw;
-  height: 750px;
+  height: 780px;
   top: 0;
   left: 0;
   /*  background-size: cover;*/
@@ -7389,6 +7422,8 @@ li a:focus {
 
 .navbar-dark .navbar-nav .active > .nav-link {
   border-bottom: 1px solid #ffffff;
+  margin-left: 4px;
+  margin-right: 4px;
   height: 32px;
   pointer-events: none; }
 
@@ -7482,6 +7517,9 @@ li a:focus {
 .site-footer {
   padding: 4rem 0;
   margin-top: 0rem; }
+
+.socialIcon {
+  width: 25px; }
 
 .site-content {
   word-break: break-word; }

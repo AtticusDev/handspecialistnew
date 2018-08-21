@@ -24,23 +24,28 @@
 	</div>
 
 
-	<div class="container-fluid mb-0 bg-white">
-		<div class="row">
-			<div class="container">
-				<div class="row justify-content-md-center">
-					<div class="container">
 
 
-					<?php 
+					<?php
+					$i = 0; 
 					$args = array( 'post_type' => 'quote' );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
+
+				    $i++;
+
 					 $author = get_field( "author" );
 					 $description = get_field( "description" );
 					 $text1 = get_field("text1");
 					 $text2 = get_field("text2");
 					 $text3 = get_field("text3");
 					?>
+	<div class="container-fluid mb-0  treatmentPanel">
+		<div class="row">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="container">
+
 						<div class="col-sm-12 col-md-12 p-4">
 								<h3><?php echo $author; ?></h3>
 								<h3><?php echo $description; ?></h3>
@@ -56,15 +61,15 @@
 							    </div>
 							</div>
 						</div>
-					<?php 
-					endwhile;
-					wp_reset_query();
-					?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+					<?php 
+					endwhile;
+					wp_reset_query();
+					?>
 
 	<div class="container-fluid mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">

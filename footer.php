@@ -17,6 +17,12 @@
 		<div class="container pt-5">
 			<div class="row justify-content-center">
 				<div class="col-md-3 text-center">
+					<a href="https://www.instagram.com/thehandspecialist" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/instagram.svg" class="mt-0 socialIcon"></a>
+					&nbsp;&nbsp;
+					<a href="https://www.facebook.com/thehandspecialist" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.svg" class="mt-0 socialIcon"></a>
+					&nbsp;&nbsp;
+					<a href="https://www.linkedin.com/thehandspecialist" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" class="mt-0 socialIcon"></a>
+
 				</div>
 				<div class="col-md-6 text-center text-white">
 					<div class="mainLogo">
@@ -30,6 +36,8 @@
 					SITE DESIGNED AND BUILT BY <a href="http://www.atticuscreative.co.uk" target="_blank" class="text-white">ATTICUS</a>
 				</div>
 				<div class="col-md-3 text-center text-white">
+					<p>0207 820 8007<br />
+					<a href="/contact" style="color: #fff;">BOOK APPOINTMENT</a>
 				</div>
 			</div>
 		</div><!--  .container -->

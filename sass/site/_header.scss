@@ -45,6 +45,8 @@ li a:focus {
 .navbar-dark .navbar-nav .active>.nav-link
 {
     border-bottom: 1px solid #ffffff;
+    margin-left: 4px;
+    margin-right: 4px;
     height: 32px;
     pointer-events:none;
 }

@@ -11,6 +11,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('text-center'); ?>>
 
+
+	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
+		<div class="row justify-content-md-center">
+				<div class="col-sm-12 col-md-6 text-center text-white mt-5 mb-5">
+				<h1><?php
+					the_title();
+				?>
+				</h1>
+				</div>
+		</div>
+	</div>
+
+
 	<div class="container-fluid mb-0" style="background-color:#ffffff;">
 		<div class="row">
 			<div class="container">
@@ -19,6 +32,12 @@
 					<?php
 						the_content();
 					?>
+					<p>
+						<?php
+						 the_field('unavailable'); ?>
+						
+					</p>
+
 					</div>
 				</div>
 			</div>
