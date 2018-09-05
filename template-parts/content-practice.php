@@ -69,7 +69,7 @@
 				</div>
 				<div class="col-sm-12 col-md-12 text-center mt-2 mb-5">
 					<p class="contactBlock"><?php the_field('private_practice_contact'); ?></p>
-				<a href="#" class="btn appointmentBtn white-green">Request an appointment</a>
+				<a href="/contact/" class="btn appointmentBtn white-green">Request an appointment</a>
 				</div>
 		</div>
 	</div>

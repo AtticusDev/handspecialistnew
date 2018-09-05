@@ -31,7 +31,7 @@
 	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-				<a href="#" class="btn appointmentBtn white-black">Request an appointment</a>
+				<a href="/contact/" class="btn appointmentBtn white-black">Request an appointment</a>
 			</div>
 		</div>
 	</div>

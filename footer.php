@@ -37,7 +37,7 @@
 				</div>
 				<div class="col-md-3 text-center text-white">
 					<p>0207 820 8007<br />
-					<a href="/contact" style="color: #fff;">BOOK APPOINTMENT</a>
+					<a href="/contact/" style="color: #fff;">BOOK APPOINTMENT</a>
 				</div>
 			</div>
 		</div><!--  .container -->

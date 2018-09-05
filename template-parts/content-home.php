@@ -19,7 +19,7 @@
 						<?php
 							the_content();
 						?>
-						<a href="#" class="btn appointmentBtn blue-white">View conditions treated</a>
+						<a href="/conditions-treated/" class="btn appointmentBtn blue-white">View conditions treated</a>
 						</div>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 					<h1 style="margin-bottom:0.5rem;"><?php the_field('doctor_name'); ?></h1>
 					<p><?php the_field('doctor_title'); ?></p>
 					<p class="text-white"><?php the_field('doctor_bio'); ?></p>
-					<a href="#" class="btn readmoreBtn bg-light">About Ramon</a>
+					<a href="/about-ramon/" class="btn readmoreBtn bg-light">About Ramon</a>
 
 
 				</div>
@@ -50,7 +50,7 @@
 	<div class="container-fluid mb-0" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-6 text-center mt-5 mb-5">
-				<a href="#" class="btn appointmentBtn blue-white">Request an appointment</a>
+				<a href="/contact/" class="btn appointmentBtn blue-white">Request an appointment</a>
 			</div>
 		</div>
 	</div>
