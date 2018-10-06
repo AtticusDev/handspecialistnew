@@ -54,6 +54,34 @@
 				</div> <!-- close container -->
 			</div>
 		</div>
+		<div class="container-fluid" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
+			<div class="row">
+		    	<div class="container mt-4">
+		    		<div class="row justify-content-center">
+				          <div class="mainLogo justify-content-md-center">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-5">
+						</div>					
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="container-fluid mb-0 text-center">
+			<div class="row">
+				<div class="container-fluid homebanner" style="background-color: rgb(<?php the_field('nav_color'); ?>);">
+					<div class="row align-items-end">
+						<div class="col-md-12">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<img src="<?php the_post_thumbnail_url(); ?>" class="align-bottom">
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<!-- Hide parallax header
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-color: rgba(<?php the_field('nav_color'); ?>, 1);"></div>
 		<?php endif; ?> 	
@@ -74,6 +102,6 @@
 		  </div>
 		</header>
 
-
+-->
 
 	<div id="content" class="site-content layout">

@@ -31,7 +31,12 @@
 				
 
 					<?php
-					$args = array( 'post_type' => 'treatment', 'posts_per_page' => 20 );
+					$args = array(
+					 'post_type' => 'treatment',
+					 'meta_key' => 'order_number',
+					 'orderby' => 'meta_value_num',
+					 'order' => 'ASC' 
+					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 						echo '<div class="col-sm-12 col-md-6 text-center mt-2 pb-2">';

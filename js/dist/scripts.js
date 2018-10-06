@@ -6501,6 +6501,7 @@ jQuery(document).ready(function($){
 
 
   //Parallax scroll
+/*
   $(window).scroll(function() {
     if ($( window ).width() >= 1024) {
     	 parallax();
@@ -6515,6 +6516,6 @@ jQuery(document).ready(function($){
           $('header .content').css('opacity',1-(scrolled*0.01)/10);
 
   	}
-
+*/
 });
 

@@ -51,7 +51,8 @@
 	</div>
 
 
-	<div class="container-fluid">				
+	<div class="container-fluid">
+		<div class="row">				
 						<?php
 					// check if the repeater field has rows of data
 					if( have_rows('treatments') ):
@@ -92,6 +93,7 @@
 					    // no rows found
 					endif;
 					?>
+		</div>
 	</div>
 	<div class="container-fluid mb-0" style="background-color:#d1d3d4;">
 		<div class="row justify-content-md-center">

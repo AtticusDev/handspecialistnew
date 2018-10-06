@@ -28,15 +28,25 @@
 					<div class="mainLogo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class=" pb-4">
 					</div>
-					FORTIUS CLINIC CENTRAL<BR>
-					17 FITZHARDINGE STREET<BR />
-					LONDON W1H 6EQ<br />
-					+44 (0) 203 870 8998<br>
+					<div class="d-md-flex flex-row justify-content-center pb-4">
+					<div class="p-2">
+						FORTIUS CLINIC CENTRAL<BR>
+						17 FITZHARDINGE STREET<BR />
+						LONDON W1H 6EQ<br />
+						<a href="tel:+44 (0) 203 870 8998" style="color: #ffffff; text-decoration: none;">+44 (0) 203 870 8998</a><br>
+					</div>
+					<div class="p-2">
+						FORTIUS CLINIC CITY<BR>
+						75 KING WILLIAM STREET<BR />
+						LONDON EC4N 7BE<br />
+						<a href="tel:+44 (0) 203 195 2442" style="color: #ffffff; text-decoration: none;">+44 (0) 203 195 2442<br>
+					</div>
+					</div>
 					<a href="mailto:tahmassebi@fortiusclinic.com" class="text-white">TAHMASSEBI@FORTIUSCLINIC.COM</a><br />
 					SITE DESIGNED AND BUILT BY <a href="http://www.atticuscreative.co.uk" target="_blank" class="text-white">ATTICUS</a>
 				</div>
 				<div class="col-md-3 text-center text-white">
-					<p>0207 820 8007<br />
+					<p><a href="tel:+44 (0) 207 820 8007" style="color: #ffffff; text-decoration: none;">+44 (0) 207 820 8007</a><br />
 					<a href="/contact/" style="color: #fff;">BOOK APPOINTMENT</a>
 				</div>
 			</div>

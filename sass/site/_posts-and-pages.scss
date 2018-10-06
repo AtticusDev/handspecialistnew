@@ -470,14 +470,14 @@ div.gform_footer.top_label {
 
 .bg {
   display: block;
-  position: fixed;
+  position: relative;
   width: 100vw;
-  height: 780px;
+  height: 580px;
   top: 0;
   left: 0;
 /*  background-size: cover;*/
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   -moz-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
@@ -522,10 +522,15 @@ header .content {
   .mainLogo img{
     width: 55vw;
     max-width: 320px;
+    margin-top:1rem;
   }
-  h1 {
+  h1, h2 {
   font-size:1.5rem;
   }
+  .contactBlock{
+  font-size: 1.1rem;
+  }
+
   .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
     clear: both;
     width: 100%;
