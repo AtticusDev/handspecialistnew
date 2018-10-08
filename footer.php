@@ -21,21 +21,20 @@
 					&nbsp;&nbsp;
 					<a href="https://www.facebook.com/thehandspecialist" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.svg" class="mt-0 socialIcon"></a>
 					&nbsp;&nbsp;
-					<a href="https://www.linkedin.com/thehandspecialist" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" class="mt-0 socialIcon"></a>
-
+					<a href="https://www.linkedin.com/in/ramon-tahmassebi-88959087" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" class="mt-0 socialIcon"></a>
 				</div>
 				<div class="col-md-6 text-center text-white">
 					<div class="mainLogo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class=" pb-4">
 					</div>
 					<div class="d-md-flex flex-row justify-content-center pb-4">
-					<div class="p-2">
+					<div class="p-3">
 						FORTIUS CLINIC CENTRAL<BR>
 						17 FITZHARDINGE STREET<BR />
 						LONDON W1H 6EQ<br />
 						<a href="tel:+44 (0) 203 870 8998" style="color: #ffffff; text-decoration: none;">+44 (0) 203 870 8998</a><br>
 					</div>
-					<div class="p-2">
+					<div class="p-3">
 						FORTIUS CLINIC CITY<BR>
 						75 KING WILLIAM STREET<BR />
 						LONDON EC4N 7BE<br />

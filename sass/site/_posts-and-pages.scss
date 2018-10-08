@@ -78,7 +78,9 @@
 }
 
 
-
+a:hover {
+  text-decoration: none;
+}
 
 .mainLogo img
 {
@@ -285,14 +287,56 @@ h4 a:hover {
   background-color: #dbdcdd;
   color: #000000; 
 }
+
+.conditionBtn {
+  height:90px;
+  background-color: #e6e6e7;
+  border-radius: 0;
+}
+
+.conditionBtn:hover {
+  background-color: #dbdcdd;
+  color: #000000;
+  text-decoration: none; 
+
+}
+
+.conditionBtnLt {
+  height:90px;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+
+.conditionBtnLt:hover {
+  background-color: #e9e9e9;
+  color: #000000;
+  text-decoration: none; 
+
+}
+
 .treatmentBtnLt {
+  display:block;
+  white-space: normal;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  font-family:'Gill Sans W01 Light';
+}
+
+
+
+/*.treatmentBtnLt {
   white-space: normal;
   padding: 1.5rem 2rem;
   border: 0;
   border-radius: 0;
   width: 100%;
-  min-height: 90px;
   max-height: 90px;
+  min-height: 90px;
   background-color: #ffffff;
   color: #000000;
   text-transform: uppercase;
@@ -305,6 +349,11 @@ h4 a:hover {
   background-color: #e9e9e9;
   color: #000000; 
 }
+.treatmentBtnLt a{
+  color: #000000;
+  text-decoration:none;
+}
+*/
 
 /* END BUTTONS */
 
@@ -333,6 +382,10 @@ h4 a:hover {
   padding-bottom: 1rem;
   border-bottom: 1px solid #999999;
 }
+.underlineLink:last-of-type{
+  border-bottom: 0px;
+}
+
 .ppPanel{
   margin: 1rem;
   background-color:#d0d1d3; 

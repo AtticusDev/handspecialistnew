@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mb-0" style="background-color:#7da6b8;">
+	<div class="container-fluid mb-0" style="background-color:#<?php the_field('doctor_panel_color'); ?>">
 		<div class="row justify-content-md-center">
 			<div class="container">
 				<div class="row align-items-end">

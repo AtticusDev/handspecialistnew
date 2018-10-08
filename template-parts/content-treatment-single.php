@@ -23,24 +23,36 @@
 					</h1>
 					<?php
 
-					// check if the repeater field has rows of data
+
 					if( have_rows('treatments') ):
+					$count = count(get_field('treatments'));
+					endif;
+
+
+
+
+					// check if the repeater field has rows of data
+					if( have_rows('treatments') && $count > 1 ):
+
 
 						// set the counter variable	
 						$i = 0;
 
 					 	// loop through the rows of data to create the navigation
 					    while ( have_rows('treatments') ) : the_row();
+
 				    	$i++;
-					    	?>
+				    	?>
+
 					    	<h4 class="underlineLink"><a href="#<?php echo $i; ?>">
 							<?php
 							// display a sub field value
 					        the_sub_field('title');
 					        ?>
 					    	</h4></a>
-					        <?php
 
+
+					        <?php
 					    endwhile;
 					endif;
 					?>
@@ -67,8 +79,8 @@
 				<a id="<?php echo $i; ?>"></a>
 				<div class="row">
 					<div class="container">
-						<div class="row  justify-content-md-center text-left">
-							<div class="col-md-8 pt-5 pb-5">
+						<div class="row justify-content-md-center text-left">
+							<div class="col-md-8 pt-5 pb-5 treatmentNav">
 							    	<h4>
 									<?php
 									// display a sub field value

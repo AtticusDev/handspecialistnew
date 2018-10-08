@@ -68,11 +68,17 @@
 					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
-						echo '<div class="col-sm-12 col-md-6 text-center mt-2 pb-2">';
+						?>
+						<div class="col-sm-12 col-md-6">
+						<a href="<?php the_permalink(); ?>"><div class="btn conditionBtnLt d-flex align-items-center mb-4">
 
-							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="btn treatmentBtnLt">', '</a>' );
+							<span class="treatmentBtnLt"><?php the_title(); ?></span>
 
-						echo '</div>';
+						</div></a>
+						</div>
+
+						<?php
+
 					endwhile;
 
 					wp_reset_query();

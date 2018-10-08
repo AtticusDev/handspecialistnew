@@ -24,7 +24,7 @@
 	</div>
 
 
-	<div class="container-fluid pb-4 bg-white">
+	<div class="container-fluid pb-4 bg-white pt-5">
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">
@@ -39,11 +39,17 @@
 					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
-						echo '<div class="col-sm-12 col-md-6 text-center mt-2 pb-2">';
+					?>
 
-							the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="btn treatmentBtn">', '</a>' );
+						<div class="col-sm-12 col-md-6">
+						<a href="<?php the_permalink(); ?>"><div class="btn conditionBtn d-flex align-items-center mb-4">
 
-						echo '</div>';
+							<span class="treatmentBtnLt"><?php the_title(); ?></span>
+
+						</div></a>
+						</div>
+
+				<?php
 					endwhile;
 
 					wp_reset_query();
