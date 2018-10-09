@@ -7451,7 +7451,8 @@ nav {
 
 .navbar-nav li {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  padding: 0 0.2rem; }
 
 li a:hover,
 li a:focus {
@@ -7464,12 +7465,16 @@ li a:focus {
   outline: none;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.navbar-nav a span {
+  display: inline-block;
+  margin-right: -0.2rem; }
 
 .navbar-dark .navbar-nav .active > .nav-link {
   border-bottom: 1px solid #ffffff;
-  margin-left: 4px;
-  margin-right: 4px;
   height: 32px;
   pointer-events: none; }
 
@@ -7496,6 +7501,11 @@ li a:focus {
     font-family: 'Gill Sans W01 Medium';
     letter-spacing: 0.1rem;
     text-transform: uppercase; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem; } }
 
 @font-face {
   font-family: "Avenir LT W01_35 Light1475496";

@@ -20,8 +20,8 @@
 			<div class="row justify-content-md-center">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-sm-12 col-md-12 text-center text-white align-self-end">
-							<img src="<?php the_field( "image" ); ?>" class="align-bottom">
+						<div class="col-sm-12 col-md-12 text-center text-white align-self-end pt-5">
+							<img src="<?php the_field( "image" ); ?>" class="align-bottom" style="height:450px;">
 						</div>
 					</div>
 				</div>

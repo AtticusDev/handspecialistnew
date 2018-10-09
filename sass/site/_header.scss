@@ -25,6 +25,7 @@ nav {
 .navbar-nav li{
   display: inline-block;
   vertical-align: top;
+  padding: 0 0.2rem;
 }
 
 li a:hover,
@@ -40,13 +41,21 @@ li a:focus {
     letter-spacing: 0.2rem;
     text-decoration: none;
     text-transform: uppercase;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+// adding this to a nav makes sure the underline stops at the last letter and does not overhand 
+
+.navbar-nav a span {
+    display: inline-block;
+    margin-right: -0.2rem;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link
 {
     border-bottom: 1px solid #ffffff;
-    margin-left: 4px;
-    margin-right: 4px;
     height: 32px;
     pointer-events:none;
 }
@@ -81,6 +90,13 @@ li a:focus {
       text-transform: uppercase;
     }
 
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
 }
 
 

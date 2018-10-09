@@ -18,7 +18,7 @@
 					the_content();
 				?>
 				</div>
-				<div class="container">
+				<div class="container mb-5">
 					<div class="row justify-content-md-center">
 						<div class="d-flex flex-column col-sm-12 col-md-4 bg-white p-4 practiceBox">
 							<?php the_field('private_practice'); ?>
@@ -80,7 +80,7 @@
 				<div class="col-sm-12 col-md-12 text-center mt-5">
 					<h2>NHS practice</h2>
 				</div>
-				<div class="container">
+				<div class="container mb-5">
 					<div class="row justify-content-md-center">
 						<div class="col-sm-12 col-md-10 NHSpracticeBox">
 							<h3><?php the_field('nhs_practice_title'); ?></h3>

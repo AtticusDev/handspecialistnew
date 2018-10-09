@@ -80,7 +80,7 @@
 				<div class="row">
 					<div class="container">
 						<div class="row justify-content-md-center text-left">
-							<div class="col-md-8 pt-5 pb-5 treatmentNav">
+							<div class="col-md-8 pt-5 pb-5">
 							    	<h4>
 									<?php
 									// display a sub field value

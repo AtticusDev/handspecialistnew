@@ -42,6 +42,8 @@
 					              'depth'      => 2,
 					              'container'  => false,
 					              'menu_class'     => 'navbar-nav',
+					              'link_before' => '<span>',
+					              'link_after' => '</span>',
 					              'walker'     => new Bootstrap_Walker_Nav_Menu()
 					              );
 					            if (has_nav_menu('primary')) {
@@ -59,7 +61,7 @@
 		    	<div class="container mt-4">
 		    		<div class="row justify-content-center">
 				          <div class="mainLogo justify-content-md-center">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-5">
+				          	<?php $url = home_url( '/' ); ?><a href="<?php echo esc_url( $url ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-5"></a>
 						</div>					
 			        </div>
 			    </div>

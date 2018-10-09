@@ -53,9 +53,9 @@
 	</div>
 
 
-	<div class="container-fluid pb-4" style="background-color:#d1d3d4;">
+	<div class="container-fluid pb-5" style="background-color:#d1d3d4;">
 		<div class="row">
-			<div class="container">
+			<div class="container mb-5">
 				<div class="row justify-content-md-center">
 				
 
