@@ -22,7 +22,12 @@
 					<?php
 						the_content();
 					?>
-					<a href="#" class="btn appointmentBtn black-white"><span>Download full pdf profile</span></a>
+					<?php
+					$filefield = get_field('download_file');
+
+					if($filefield): ?>
+					<a href="<?php echo $filefield['url'] ?>" class="btn appointmentBtn black-white" target="_blank"><span>Download full pdf profile</span></a>
+					<?php endif; ?>
 				</div>
 
 				</div>
