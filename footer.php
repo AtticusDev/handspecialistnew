@@ -43,8 +43,8 @@
 					SITE DESIGNED AND BUILT BY <a href="http://www.atticuscreative.co.uk" target="_blank" class="text-white">ATTICUS</a>
 				</div>
 				<div class="col-md-3 text-center text-white">
-					<p><a href="tel:0203 870 8998" style="color: #ffffff; text-decoration: none;">Office hours appointments<br />0203 870 8998</a><br />
-						<a href="tel:0203 195 2442" style="color: #ffffff; text-decoration: none;">Out of hours appointments<br />0203 195 2442</a></p>
+					<p><a href="tel:0203 870 8998" style="color: #ffffff; text-decoration: none;">CONTACT DURING OFFICE HOURS<br />0203 870 8998</a><br /><br />
+						<a href="tel:0203 195 2442" style="color: #ffffff; text-decoration: none;">CONTACT OUT OF OFFICE HOURS<br />0203 195 2442</a></p>
 
 				</div>
 			</div>

@@ -22,6 +22,10 @@ nav {
     z-index: 1030; 
 }
 
+.admin-bar .navfixed {
+  top: 32px;
+}
+
 .navbar-nav li{
   display: inline-block;
   vertical-align: top;
@@ -102,7 +106,7 @@ li a:focus {
 
 
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=224ce532-c29e-44f6-aeb7-41c3728c27d0");
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=224ce532-c29e-44f6-aeb7-41c3728c27d0");
     @font-face{
         font-family:"Avenir LT W01_35 Light1475496";
         src:url("Fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
