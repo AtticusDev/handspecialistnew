@@ -12,7 +12,13 @@
 ?>
 
 	</div><!-- #content -->
-
+	<div class="container mobileCTA" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
+		<div class="row justify-content-center">
+			<div>
+				<a href="/contact/" class="btn appointmentBtn blue-white">GET IN TOUCH</a>
+			</div>
+		</div>
+	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo" style="background-color: rgb(<?php the_field('footer_color'); ?>);">
 		<div class="container pt-5">
 			<div class="row justify-content-center">

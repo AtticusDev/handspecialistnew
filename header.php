@@ -40,8 +40,12 @@
 		<div class="container-fluid navfixed" style="background-color: rgba(<?php the_field('nav_color'); ?>, 0.90);">
 			<div class="row">
 				<div class="container">
-					<div class="row justify-content-center">
-					    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center" >
+					<div class="row justify-content-left">
+				    	<div class="mobileLogo">
+				          	<?php $url = home_url( '/' ); ?><a href="<?php echo esc_url( $url ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ramon-logo.svg" class="mt-1" width="130px;"></a>
+				    	</div>
+
+					    <nav class="navbar navbar-expand-lg navbar-dark" >
 								<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 								</button>
@@ -62,6 +66,9 @@
 					            ?>
 					      		</div>
 				    	</nav>
+			      		<div class="mobileCall">
+				          	<a href="tel:0203 870 8998"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/phone.svg" class="mt-1" width="25px;"></a>
+			      		</div>
 				    </div> <!-- close row -->
 				</div> <!-- close container -->
 			</div>
